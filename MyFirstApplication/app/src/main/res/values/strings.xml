@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MyFirstApplication</string>
+    <string name="app_name">MyFirstApp</string>
+    <string name="email">EMAIL</string>
 </resources>
