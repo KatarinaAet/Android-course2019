@@ -2,6 +2,7 @@ package com.github.KatarinaAet.myfirstapplication;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -9,15 +10,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import static com.github.KatarinaAet.myfirstapplication.R.layout.activity_note1;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final Button buttonSend = findViewById(R.id.email);
         buttonSend.setOnClickListener(this);
+        setTitle("Note");
+        CardView cardView = findViewById(R.id.card);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Note1Activity.class));
+            }
+        });
 
     }
 
