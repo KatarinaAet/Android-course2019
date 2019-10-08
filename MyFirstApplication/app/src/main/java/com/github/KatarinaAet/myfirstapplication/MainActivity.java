@@ -1,6 +1,5 @@
 package com.github.KatarinaAet.myfirstapplication;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         final Button buttonSend = findViewById(R.id.email);
         buttonSend.setOnClickListener(this);
         setTitle("Note");
-        CardView cardView = findViewById(R.id.card);
+        CardView cardView = findViewById(R.id.card_main);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
