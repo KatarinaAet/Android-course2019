@@ -17,12 +17,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         final Button buttonSend = findViewById(R.id.email);
         buttonSend.setOnClickListener(this);
-        setTitle("Note");
+        setTitle(getString(R.string.title_note));
         CardView cardView = findViewById(R.id.card_main);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Note1Activity.class));
+                startActivity(new Intent(MainActivity.this, NoteDetailActivity.class));
             }
         });
 

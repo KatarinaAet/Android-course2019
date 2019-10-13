@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.github.KatarinaAet.myfirstapplication">
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Note1Activity"></activity>
+        <activity android:name=".NoteDetailActivity" />
     </application>
 
 </manifest>
