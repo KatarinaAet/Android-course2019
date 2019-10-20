@@ -1,11 +1,20 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MyFirstApp</string>
     <string name="email">EMAIL</string>
     <string name="info">A mountain is a large landform that rises above the surrounding land in a limited area, usually in the form of a peak.
         A mountain is generally steeper than a hill. Mountains are formed through tectonic forces or volcanism. These forces can locally raise the surface of the earth. Mountains erode slowly through the action of rivers, weather conditions, and glaciers. A few mountains are isolated summits, but most occur in huge mountain ranges.
         High elevations on mountains produce colder climates than at sea level. These colder climates strongly affect the ecosystems of mountains: different elevations have different plants and animals. Because of the less hospitable terrain and climate, mountains tend to be used less for agriculture and more for resource extraction and recreation, such as mountain climbing.
     </string>
-    <string name="date_string">2019.09.19</string>
+    <string name="info2">There is no universally accepted definition of a mountain. Elevation, volume, relief, steepness, spacing and continuity have been used as criteria for defining a mountain.[1] In the Oxford English Dictionary a mountain is defined as "a natural elevation of the earth surface rising more or less abruptly from the surrounding level and attaining an altitude which, relatively to the adjacent elevation, is impressive or notable."[1]</string>
+    <string name="info3" tools:ignore="StringEscaping">Whether a landform is called a mountain may depend on local usage. Mount Scott outside Lawton, Oklahoma, USA, is only 251 m (823 ft) from its base to its highest point. Whittows Dictionary of Physical Geography[2] states "Some authorities regard eminences above 600 metres (2,000 ft) as mountains, those below being referred to as hills."</string>
+    <string name="info4">In the United Kingdom and the Republic of Ireland, a mountain is usually defined as any summit at least 2,000 feet (610 m) high,[3] which accords with the official UK governments definition that a mountain, for the purposes of access, is a summit of 2,000 feet (610 m) or higher.[4] In addition, some definitions also include a topographical prominence requirement, typically 100 or 500 feet (30 or 152 m).[5]</string>
+    <string name="info5">At one time the U.S. Board on Geographic Names defined a mountain as being 1,000 feet (300 m) or taller,[6] but has abandoned the definition since the 1970s. Any similar landform lower than this height was considered a hill. However, today, the United States Geological Survey (USGS) concludes that these terms do not have technical definitions in the US.[7]</string>
+    <string name="date_string">yyyy.MM.dd</string>
     <string name="title_note">Note</string>
     <string name="note_detail_title">Note 1</string>
+    <string name="peak1">Peak 1</string>
+    <string name="peak2">Peak 2</string>
+    <string name="peak3">Peak 3</string>
+    <string name="peak4">Peak 4</string>
+    <string name="peak5">Peak 5</string>
 </resources>
