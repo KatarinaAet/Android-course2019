@@ -11,8 +11,10 @@
     <ImageView
         android:layout_gravity="center_horizontal"
         android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_height="0dp"
         android:src="@drawable/snowy_peak1"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
@@ -24,6 +26,6 @@
         android:layout_height="wrap_content"
         android:text="@string/info"
         android:layout_marginTop="16dp"
-        android:layout_weight="2"/>
+        android:layout_weight="1"/>
 
 </LinearLayout>

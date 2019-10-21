@@ -11,7 +11,8 @@ import java.util.Map;
 
 public class NoteRepository {
     private static final Map<String, Note> NOTE_LIST = new LinkedHashMap<>();
-    public NoteRepository(final Context context) {
+    private NoteRepository(){};
+    public static void init(final Context context) {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2019, 10, 20);
         final Date date = calendar.getTime();
