@@ -1,6 +1,5 @@
 package com.github.KatarinaAet.myfirstapplication;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +15,16 @@ import java.util.List;
 import java.util.Locale;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder> {
+    public interface Listener{
+        void onNoteClick(String id);
+    }
+    private Listener myListener;
 
     private List<Note> noteList = new ArrayList<>();
+    public NoteAdapter(Listener listener){
+        super();
+        myListener = listener;
+    }
 
     public void setNoteList(final List<Note> noteList) {
         this.noteList = noteList;
@@ -31,7 +38,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
                 R.layout.activity_note_list, parent,
                 false
         );
-        return new NoteViewHolder(view);
+        return new NoteViewHolder(view, myListener);
     }
 
     @Override
@@ -55,8 +62,9 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
         private ImageView noteImageView;
         private String id;
 
-        public NoteViewHolder(final View itemView) {
+        public NoteViewHolder(final View itemView, final Listener listener) {
             super(itemView);
+            myListener = listener;
             noteTextTextView = itemView.findViewById(R.id.text_small);
             noteTitleTextView = itemView.findViewById(R.id.title);
             noteTextTextView = itemView.findViewById(R.id.text_small);
@@ -65,8 +73,9 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(final View v) {
-                    final Context context = v.getContext();
-                    context.startActivity(NoteDetailActivity.getIntent(context, id));
+                    if (listener != null){
+                        listener.onNoteClick(id);
+                    }
                 }
             });
         }
